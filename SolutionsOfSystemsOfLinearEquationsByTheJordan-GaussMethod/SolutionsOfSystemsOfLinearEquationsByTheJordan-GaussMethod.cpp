@@ -8,6 +8,8 @@ int main(int argc, char** argv)
 
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
+
+    //default file
     std::string filename{ "./input.txt" };
 
     if (argc == 2) {

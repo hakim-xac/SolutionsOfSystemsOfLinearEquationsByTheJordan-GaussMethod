@@ -27,9 +27,6 @@
     <ClCompile Include="MenuItem.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Detail.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Solution.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -42,9 +39,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="MenuItem.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Detail.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Enums.h">

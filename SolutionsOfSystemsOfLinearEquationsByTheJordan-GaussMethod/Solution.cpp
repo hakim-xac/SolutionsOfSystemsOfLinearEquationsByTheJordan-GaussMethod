@@ -80,6 +80,8 @@ namespace KHAS {
 	{
 		std::vector<std::vector<double>> data{ actual_data };
 
+		printDataInTheInterface(data, "Начальные данные");
+
 		for (size_t i{}, ie{ data.size()}; i != ie; ++i) {
 
 			auto fn{ i + 1 == ie ? i : findMaxAbs(data, i) };

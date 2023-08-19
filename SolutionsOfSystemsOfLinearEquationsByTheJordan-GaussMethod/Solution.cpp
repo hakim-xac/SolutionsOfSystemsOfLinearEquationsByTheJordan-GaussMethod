@@ -164,10 +164,9 @@ namespace KHAS {
 		auto&& [main_first_value, main_second_value] { getValueFromData(data, main_coords) };
 		auto&& [secondary_first_value, secondary_second_value] { getValueFromData(data, secondary_coords) };
 
-		auto a{ secondary_first_value * secondary_second_value };
-		auto b{ a / main_first_value };
-		auto c{ main_second_value - b };
-		return c;
+		auto pow{ secondary_first_value * secondary_second_value };
+
+		return main_second_value - pow / main_first_value;
 	}
 
 	std::pair<double, double> Solution::getValueFromData(std::vector<std::vector<double>>& data, const DiagonalCoord& di_coord) const noexcept

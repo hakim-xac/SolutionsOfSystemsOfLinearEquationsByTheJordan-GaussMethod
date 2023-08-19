@@ -48,4 +48,8 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
+    <Text Include="test_input.txt" />
+  </ItemGroup>
 </Project>

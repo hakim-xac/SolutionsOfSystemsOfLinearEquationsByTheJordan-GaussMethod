@@ -30,11 +30,11 @@ namespace KHAS {
 
 		virtual ~Interface() = default;
 
-		virtual void addHeaderItem(std::string&& item, Aligment aligment) noexcept = 0;
+		virtual void addHeaderItem(const std::string&, Aligment) noexcept = 0;
 		virtual void showHeader() const noexcept = 0;
 
-		virtual void addMenuItem(std::string&& item, std::optional<std::function<std::vector<std::string>()>>&& func, IsExit type_exit) noexcept = 0;
-		virtual void addDataItem(std::string&& item) noexcept = 0;
+		virtual void addMenuItem(std::string&&, std::optional<std::function<std::vector<std::string>()>>&&, IsExit) noexcept = 0;
+		virtual void addDataItem(std::string&&) noexcept = 0;
 		virtual void clearData() noexcept = 0;
 		virtual void showMenu() const noexcept = 0;
 
@@ -44,7 +44,7 @@ namespace KHAS {
 
 	protected:
 
-		virtual void setTitle(std::string_view title) const noexcept = 0;
+		virtual void setTitle(std::string_view) const noexcept = 0;
 		virtual void setWindowSize(int16_t window_width, int16_t window_height) const noexcept = 0;
 
 	};

@@ -50,7 +50,7 @@ namespace KHAS {
 
 		void loop() const noexcept override;
 
-		void addHeaderItem(std::string&& item, Aligment aligment = Aligment::CENTER) noexcept override;
+		void addHeaderItem(const std::string& text, Aligment aligment = Aligment::CENTER) noexcept override;
 
 
 		void addDataItem(std::string&& item) noexcept;

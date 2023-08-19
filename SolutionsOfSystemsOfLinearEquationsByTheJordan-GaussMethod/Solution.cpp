@@ -181,7 +181,7 @@ namespace KHAS {
 	{
 		using namespace std::string_literals;
 
-		app_.addHeaderItem(std::move(window_name_));
+		app_.addHeaderItem(window_name_);
 		app_.addHeaderItem(app_.dividingLine());
 		app_.addHeaderItem("Лабораторная работа:"s, "№ 1"s, Aligment::JUSTIFIED);
 		app_.addHeaderItem("Группа:"s, "ПБ-11"s, Aligment::JUSTIFIED);

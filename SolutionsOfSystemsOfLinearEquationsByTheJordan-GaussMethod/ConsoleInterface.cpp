@@ -65,9 +65,9 @@ namespace KHAS {
 		std::cout << "\ngoodbay...\n";
 	}
 
-	void ConsoleInterface::addHeaderItem(std::string&& text, Aligment aligment) noexcept
+	void ConsoleInterface::addHeaderItem(const std::string& text, Aligment aligment) noexcept
 	{
-		header_.emplace_back(createString(std::move(text), aligment, ' '));
+		header_.emplace_back(createString(text, aligment, ' '));
 	}
 
 
